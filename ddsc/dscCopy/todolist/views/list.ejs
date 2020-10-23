@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%for(var i=0;i<newListItem.length;i++) {%>
+    <li><%=newListItem[i].name%></li>
+    <%}%>    
+    <form action="/" method="POST">
+       <input type="text" name="n">
+       <button type="submit" name="submit">add</button>
+    
+    </form>
+</body>
+</html>

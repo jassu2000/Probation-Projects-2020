@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2>Get Connected With Us </h2> -->
+    <form class="form-signin" method="POST" action="/register">
+        <h2 class="h3 mb-3 font-weight-normal" style="font-family: 'Dosis', sans-serif;"> Get Connected With Us!</h2>
+        <!-- <div class="h3 mb-3 font-weight-normal" style="font-family: 'Dosis', sans-serif; font-size:250%;"> Login Here!</div>
+        <label for="inputEmail" class="sr-only" style="font-family: 'Balsamiq Sans', cursive;">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required> -->
+        <!-- </div> -->
+        <!-- <br> -->
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p> -->
+        <!-- Not a member? -->
+        <br>
+            <input type="text"  name="username" class="form-control" placeholder="Your name" required> 
+            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <input type="text"  name="branch" class="form-control" placeholder="branch" required>
+           
+            <input type="number"  name="year" class="form-control" placeholder="year" required>
+            <input type="password"  name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+        <button class="btn btn-lg btn-success btn-block" type="submit" style="font-family: 'Balsamiq Sans', cursive;">Register</button>
+    </form>
+    <%- include('partials/header') %>

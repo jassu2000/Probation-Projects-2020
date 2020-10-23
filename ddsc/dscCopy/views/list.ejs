@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+</head>
+<body>
+ <h2>welcome back</h2>
+ <ul>
+    
+    <% newlistitems.forEach(function(item){ %>    
+        <li><%=item.name%></li>
+        <%})%>
+</ul>
+    <form action="/List" method="POST">
+        <input type="text" name="newitem"></input>
+        <input type="text" name="description"></input>
+        <button type="submit" name="button"> Add</button>
+    </form>
+
+</body>
+</html>

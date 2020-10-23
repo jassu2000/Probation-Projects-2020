@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+    <title>Register Yourself</title>
+</head>
+<style>
+    .container{
+        margin:10%;
+        margin-top:2%;
+        /* width:60%; */
+        /* display: inline-block; */
+
+    }
+    .container input,.container button{
+      width:100%;
+    }
+    
+    .side{
+        margin-top: 20%;
+        margin-left: 20%;
+        width: 100%;
+        
+    }
+ 
+  
+</style>
+<body>
+    
+    <nav class="navbar navbar-expand-lg  bg-light">
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation ">||
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <img src="images/logo.png" id="logo" style="height: 5%; width: 5%;"> &nbsp; &nbsp;
+         <h2 style="font-family: 'Balsamiq Sans', cursive;">DSC-AKGEC</h2>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            
+            <ul class="navbar-nav ml-auto">
+                <li><a class="nav-item ml-4 nav-link navbar-brand nav-item " href="home.html ">Home</a></li>
+                <li class="nav-item ml-4 nav-link nav-item dropdown dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="# ">
+                Contact </a></li>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                <li class="nav-item ml-4 nav-link"><a href="team.html"> Team</a></li>
+                <li class="nav-item ml-4 nav-link"><a href="# "> Events</a></li>
+                <li class="nav-item ml-4 nav-link"> <a href="# ">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="container row">
+   <form class="form-signin col-5" method="POST" action="/register">
+        <h1 class="h3 mb-3 font-weight-normal" style="font-family: 'Dosis', sans-serif; margin:10px;"> Get Connected With Us!</h1>
+        <!-- <div class="h3 mb-3 font-weight-normal" style="font-family: 'Dosis', sans-serif; font-size:250%;"> Login Here!</div>
+        <label for="inputEmail" class="sr-only" style="font-family: 'Balsamiq Sans', cursive;">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required> -->
+        <!-- </div> -->
+        <!-- <br> -->
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p> -->
+        <!-- Not a member? -->
+        
+        <br>
+            <input type="text"  name="username" class="form-control" placeholder="Your name" required> 
+            <br>
+            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>  <br>
+            <input type="text"  name="branch" class="form-control" placeholder="branch" required>  <br>
+           
+            <input type="number"  name="year" class="form-control" placeholder="year" required>  <br>
+            <input type="password"  name="password" id="inputPassword" class="form-control" placeholder="Password" required>  <br>
+
+        <button class="btn btn-lg btn-success btn-block" type="submit" style="font-family: 'Balsamiq Sans', cursive;">Register</button>
+    </form>
+    <div class="col-5">
+        <img src="images/undraw_happy_feeling_slmw.png" class="side">
+    </div>
+</div>
+<footer class="text-center"> 
+    <div class="card w-100 bg-light">
+        <div class="card-body">
+          <h5 class="card-title">Get Connected</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+</footer>
+</body>
+</html>

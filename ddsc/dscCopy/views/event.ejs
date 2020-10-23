@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="signin.css" rel="stylesheet">
+    <title>Events</title>
+</head>
+<style>
+    h6{
+    color:black;
+    margin-left:6%;
+    background-color: #e2e7ec;
+    }
+    #accordion section p{ 
+        display:none;
+        text-align:left; 
+        margin-left:2%;
+    }
+    #accordion section a{
+        color:white;
+        text-decoration: none;
+    }
+    #accordion section a:hover{
+        text-decoration: underline;
+    }
+    #accordion section:target p{
+        display: block;
+        color:black;
+    }
+    section{
+        width:100%;
+    }
+    .col-4,.col-6{
+        height: 330px;
+        margin: 3.5%;
+        font-family: 'Indie Flower', 'cursive';
+        /* border-radius: 20px; */
+    }
+    .col-6{
+        box-shadow: -2px 2px 2px 2px #e2dfdf;
+        background-color: white;
+        padding: 2%;
+        border-radius: 20px;
+    }
+    .col-4:hover{
+    border-radius: 10%;
+    background-color: yellowgreen;
+        transform: scale(1.2);
+    }
+    .col-6:hover{
+    border-radius: 10%; 
+    transform: scale(1.2);
+    }
+    .col-4{
+        background-color: yellowgreen;
+    }
+    .row{
+        margin: 2%;
+        padding: 2%;
+    }
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg  bg-light">
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation ">||
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <img src="images/logo.png" id="logo" style="height: 5%; width: 5%;"> &nbsp; &nbsp;
+         <h2 style="font-family: 'Balsamiq Sans', cursive;">DSC-AKGEC</h2>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            
+            <ul class="navbar-nav ml-auto">
+                <li><a class="nav-item ml-4 nav-link navbar-brand nav-item " href="/">Home</a></li>
+                <!-- <li class="nav-item ml-4 nav-link nav-item dropdown dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="# ">
+                Contact </a></li>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div> -->
+                  <li class="nav-item ml-4 nav-link"><a href="register">Register</a></li>
+                <li class="nav-item ml-4 nav-link"><a href="team"> Team</a></li>
+                <li class="nav-item ml-4 nav-link"><a href="event"> Events</a></li>
+                <li class="nav-item ml-4 nav-link"> <a href="adminlogin">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="h3 mb-3 font-weight-normal text-center" style="font-family: 'Dosis', sans-serif; margin:10px;" ><a href="#">Upcoming Events</a></h1>
+    <div id="full"> 
+    <div id="header" >
+    <div id="banner" style="height:auto; width:100%; ">
+     <div style="width:100% ; height:auto; margin:0; top:0;">
+    <main id="accordion" class="container" >
+         <section id="itemA">
+         <a href="#itemA"><h6 style="font-family: 'Indie Flower', cursive;color:black; margin: 0;padding: 1.5%; font-size: larger;" >DSC HACKFEST || Getting Started With open Source || Oct 4' 2020</h6></a> 
+         <div style="font-family: 'Grandstander', cursive; border: 1px solid #e2e7ec; margin: 0;">
+            <p style="margin: 2%;">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas atque excepturi enim nulla tempora, quis voluptatem nisi minus blanditiis!
+           <br>
+           Host: Mr. ABC <br>
+           Date: 4 oct'2020 <br>
+           Timing: 5:30 pm <br>
+           Venue: Youtube <br>
+           <button class="btn btn-primary">delete</button>
+        </p>
+    </div>
+    </section>
+    <hr style="margin: 0;padding: 0;">
+         
+          <!-- <section id="itemB">
+         <a href="#itemB"><h6 style="font-family: 'Indie Flower', cursive;margin: 0;font-size: larger; padding: 1.5%;" >DSC HACKFEST || Introduction To Cyber Security and CTFs ||  Oct 2' 2020</h6></a> 
+         <div style="font-family: 'Grandstander', cursive; border: 1px solid blue; margin: 0;">
+            <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit voluptate maiores pariatur id qui odit ad aliquid error nihil assumenda temporibus, amet officia explicabo reprehenderit voluptas culpa sint exercitationem officiis quaerat facere alias cum. Dolor impedit fugit repellendus dolorem incidunt officiis nam ut excepturi aliquid saepe debitis ipsa itaque dolore, modi, ab numquam ipsum molestias molestiae iste esse, mollitia commodi minima eaque. Accusamus doloribus quae expedita voluptates reprehenderit deleniti, ad nam mollitia architecto incidunt voluptate numquam vero fuga fugit rem temporibus dolor quaerat beatae recusandae laborum dignissimos! Laborum omnis commodi dolore porro repellendus unde, quod error, labore suscipit iure explicabo.
+         <button>delete</button>
+        </p>
+        </div> -->
+        <%for(var i=0;i<newListItem.length;i++) {%>
+               <section id="item<%=i%>">
+                    <a href="#item<%=i%>"><h6 style="font-family: 'Indie Flower', cursive;margin: 0;font-size: larger; padding: 1.5%;" >  <%=newListItem[i].name%></h6>  </a>
+                    <div style="font-family: 'Grandstander', cursive; border: 1px solid #e2e7ec;margin:0;"> 
+                        <p> 
+                    <%=newListItem[i].description%>
+                        <!-- <button>delete</button> -->
+                        <form action="/delete" method="POST">
+                            <button class="btn btn-primary" type="submit" name="checkbox" value= "<%=newListItem[i].id%>" style="margin-left:2%;" >delete</button></form>
+                        </p>
+                    </div>
+                    </section>        
+                    <%}%> 
+                </main>  
+</div></div></div>
+<br>
+<br>
+<div class="container">
+<form action="/adminlogin">
+    <button type="submit" name="submit" class="btn btn-lg btn-success btn-block">Add New Event</button>
+ </form>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+          <img src="images/crash.jpg" style="height: 90%; width: 90%; margin:5%;">
+        </div>
+        <div class="col-6">
+            <h2 class="text-center">Google Cloud Platform Crash Course</h2>
+          <p class="text-center"  style="font-family: 'Dosis', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum distinctio architecto culpa labore quaerat tempore numquam. Eius, aperiam consequatur.</p>
+          <h4 class="text-center" style="background-color: white;">Domains:</h4>
+          <ul style="margin-left: 7%;">
+          <li>Web Application Development</li>
+          <li>Data Science</li>
+          <li>Machine Learning</li>
+        </ul>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-6 text-center">
+        <h2 class="text-center">Intro to Web Scrapping</h2>
+        <p style="font-family: 'Dosis', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quisquam quae iure cum ex aliquam magnam quidem dicta, fugit libero?</p>
+        <h5 style="text-align: left;font-family: 'Dosis', sans-serif;margin-left: 8%;">Host: Mr.ABCD</h5>
+            <ul><li style="float: left;">Date:02 oct'2020</li><br>
+            <li style="float: left;">Venue:Youtube</li><br>
+            <li style="float: left;">Time:5:00 pm</li>
+        </ul>   
+        <br>
+            <div class="row" style="margin-top:0;">
+                <div class="col-3">
+                <img src="images/logo.png" style="height:50%; width:50%;">
+                <p style="font-size: 50%;">DSC-AKGEC</p>
+            </div>
+            <div class="col-3">
+                <img src="images/logo.png" alt="" style="height:50%; width:50%;">
+                <p style="font-size: 50%;">DSC-AKGEC</p>
+            </div>
+            <div class="col-3">
+                <img src="images/logo.png" alt="" style="height:50%; width:50%;">
+                <p style="font-size: 50%;">DSC-AKGEC</p>
+            </div>
+            <div class="col-3">
+                <img src="images/logo.png" alt="" style="height:50%; width:50%;">
+                <p style="font-size: 50%;">DSC-AKGEC</p>
+            </div>
+        </div>
+    </div>
+        <div class="col-4">
+          <img src="images/webscraping.jpg" style="height: 90%; width: 90%; margin:5%;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+          <img src="images/ml.jpg" style="height: 90%; width: 90%; margin:5%;" >
+        </div>
+        <div class="col-6 text-center">
+            <h2 class="text-center">Getting Started With Machine Learning</h2>
+            <p class="text-center"  style="font-family: 'Dosis', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum distinctio architecto culpa labore quaerat tempore numquam. Eius, aperiam consequatur.</p>
+            <h4 class="text-center" style="background-color: white;">Host: Mr. ABC</h4>
+            <ul><li style="float: left;">Date:02 oct'2020</li><br>
+                <li style="float: left;">Venue:Youtube</li><br>
+                <li style="float: left;">Time:5:00 pm</li>
+            </ul>   
+        </div>
+    </div>
+
+
+
+    <div class=" text-center module">
+        <div class="card-body">
+          <a href="#" class="btn btn-light">Connect with Us</a>
+          <br>
+          <br>
+          <div>
+            <img src="images/icons8-facebook-48.png" class="icon">
+            <img src="images/icons8-instagram-48.png" class="icon">
+            <img src="images/icons8-play-button-48.png" class="icon">
+            <img src="images/icons8-google-play-48.png" class="icon">
+      
+          </div>
+        </div>
+        </div>
+      
+</body>
+</html>
